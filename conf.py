@@ -2,9 +2,9 @@
 # -*- coding: utf-8 -*-
 
 # -- PROJECT Variables ----------------------------------------------------
-settings_project_name = "Tutorial pubblicazione Read the Docs su DocsItalia"
+settings_project_name = "Manuale in italiano di Eidoo wallet"
 settings_copyright_copyleft = 'comune Palermo'
-settings_editor_name = 'Ciro Spataro'
+settings_editor_name = 'Jerimum'
 settings_doc_version = 'version: latest'
 settings_doc_release = 'version: latest'
 settings_basename = 'come-creare-guida'
@@ -48,7 +48,6 @@ extensions = [
     'sphinx.ext.todo',
     'sphinx.ext.coverage',
     'sphinx.ext.ifconfig',
-    'docs-italia-theme',
 ]
 
 # Add any paths that contain templates here, relative to this directory.
@@ -130,7 +129,7 @@ html_theme_options = {
 on_rtd = os.environ.get('READTHEDOCS', None) == 'True'
 
 if not on_rtd:  # only import and set the theme if we're building docs locally
-    html_theme = 'docs-italia-theme'
+html_theme = 'default'
     #html_theme_path = ["themes", ]
 else:
     # Override default css to get a larger width for ReadTheDoc build
